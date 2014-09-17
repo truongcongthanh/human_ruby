@@ -1,0 +1,23 @@
+<div class="employee">
+  <h2>THÔNG TIN NHÂN VIÊN MỚI</h2>
+  <hr>
+  <%= form_for(:employee, :url => {:action => 'create'}) do |f| %>
+  <table class="new">
+    <tr>
+      <th>Mã NV:</th>
+      <td><%= f.text_field(:eid) %></td>
+    </tr>
+    <tr>
+      <th>Họ:</th>
+      <td><%= f.text_field(:lastname)%></td>
+    </tr>
+    <tr>
+      <th>Tên:</th>
+      <td><%= f.text_field(:firstname)%></td>
+    </tr>
+  </table>
+      <%= submit_tag("Lưu") %>
+  <% end %>
+  <hr>
+  <%= link_to("<< Xem danh sách nhân viên", {:action => 'index'}, :class => 'btn btn-primary') %>
+</div>

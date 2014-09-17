@@ -1,0 +1,30 @@
+<div class="employee">
+  <h2>DANH SÁCH NHÂN VIÊN</h2>
+  <hr>
+  <%= link_to("Thêm nhân viên", {:action => 'new'}, :class => 'btn btn-mini') %>
+  <table class="table table-striped">
+    <thead>
+    <th>Mã NV</th>
+    <th>Họ</th>
+    <th>Tên</th>
+    <th>Ngày tạo</th>
+    <th>Ngày cập nhật</th>
+    <th>&nbsp;</th>
+    </thead>
+    <% @employee.each do |nhanvien| %>
+        <tbody>
+        <td align="center"><%= nhanvien.eid %></td>
+        <td><%= nhanvien.lastname %></td>
+        <td><%= nhanvien.firstname %></td>
+        <td align="center"><%= nhanvien.created_at.strftime("%d/%m/%Y") %></td>
+        <td align="center"><%= nhanvien.updated_at.strftime("%d/%m/%Y") %></td>
+        <td align="center">
+          <%= link_to("Xem", {:action => 'show', :id => nhanvien.id}, :class => 'btn btn-mini') %>
+          <%= link_to("Sửa", {:action => 'edit', :id => nhanvien.id}, :class => 'action edit') %>
+          <%= link_to("Xóa", {:action => 'delete', :id => nhanvien.id}, :class => 'action delete') %>
+        </td>
+        </tbody>
+    <% end %>
+  </table>
+  <%= will_paginate @employee %>
+</div>

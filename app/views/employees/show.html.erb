@@ -1,0 +1,28 @@
+<div class="employee">
+  <h2>THÔNG TIN NHÂN VIÊN</h2>
+  <hr>
+  <table class="detailinfo">
+    <tr>
+      <th>Mã NV:</th>
+      <td><%= @employee.eid %></td>
+    </tr>
+    <tr>
+      <th>Họ:</th>
+      <td><%= @employee.lastname %></td>
+    </tr>
+    <tr>
+      <th>Tên:</th>
+      <td><%= @employee.firstname %></td>
+    </tr>
+    <tr>
+      <th>Ngày tạo:</th>
+      <td><%= @employee.created_at %></td>
+    </tr>
+    <tr>
+      <th>Ngày cập nhật:</th>
+      <td><%= @employee.updated_at %></td>
+    </tr>
+  </table>
+  <hr>
+  <%= link_to("<< Xem danh sách nhân viên", :action => 'index', :class => 'action index') %>
+</div>

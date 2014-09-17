@@ -1,0 +1,12 @@
+<div class="employee">
+  <h2>XÓA THÔNG TIN NHÂN VIÊN</h2>
+  <%= form_for(:employee, :url => {:action => 'destroy', :id => @employee.id}) do |f| %>
+    <p>Bạn có muốn xóa nhân viên này không?</p>
+      <p class="reference-name">Nhân Viên: <%= @employee.lastname + ' ' + @employee.firstname %></p>
+  <div class="form-button">
+    <%= submit_tag("Xóa") %>
+  </div>
+  <% end %>
+  <hr>
+  <%= link_to("<< Xem danh sách nhân viên", :action => 'index', :class => 'action index') %>
+</div>

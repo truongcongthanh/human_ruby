@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="1635105322">
+    <data-source source="LOCAL" name="Rails human_ruby: development" uuid="4e958bcd-ef91-4587-9c56-8c2f848fc252">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5433/links_hrm</jdbc-url>
+      <user-name>medisoft</user-name>
+      <user-password>dfc6dfc3dfc4dfc1dfd9df9bdf93df98df9a</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails human_ruby: test" uuid="29715c8f-0241-41d9-a75d-6c40d7cc77b5">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:human_ruby_test</jdbc-url>
+      <user-name>human_ruby</user-name>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails human_ruby: production" uuid="de1c4f0c-bfb3-459c-a78b-996eae3c9a59">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:human_ruby_production</jdbc-url>
+      <user-name>human_ruby</user-name>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+
